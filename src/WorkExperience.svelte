@@ -28,7 +28,7 @@
                 {date}
             </div>
         </div>
-        <h4 class="font-mono text-sm leading-none">{title}</h4>
+        <h3 class="font-mono text-sm leading-none">{title}</h3>
     </div>
     <div class="text-pretty font-mono text-muted-foreground mt-2 text-xs">
         {description}

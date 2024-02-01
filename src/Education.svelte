@@ -27,6 +27,6 @@
                 {date}
             </div>
         </div>
-        <h4 class="font-mono text-sm leading-none">{major}</h4>
+        <h3 class="font-mono text-sm leading-none">{major}</h3>
     </div>
 </div>
