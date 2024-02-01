@@ -4,6 +4,7 @@
     import WorkExperience from "./WorkExperience.svelte";
     import Education from "./Education.svelte";
     import Project from "./Project.svelte";
+    import Section from "./Section.svelte";
 </script>
 
 <main class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
@@ -50,27 +51,22 @@
                 </div>
             </div>
         </div>
-        <section class="flex min-h-0 flex-col gap-y-3">
-            <h2 class="text-xl font-bold">About</h2>
+        <Section Title="About">
             <p class="text-pretty font-mono text-sm text-muted-foreground">
                 {data.about}
             </p>
-        </section>
-        <section class="flex min-h-0 flex-col gap-y-3">
-            <h2 class="text-xl font-bold">Work Experience</h2>
-
+        </Section>
+        <Section Title="Work Experience">
             {#each data.workExperience as role}
                 <WorkExperience {...role} />
             {/each}
-        </section>
-        <section class="flex min-h-0 flex-col gap-y-3">
-            <h2 class="text-xl font-bold">Education</h2>
+        </Section>
+        <Section Title="Education">
             {#each data.education as program}
                 <Education {...program} />
             {/each}
-        </section>
-        <section class="flex min-h-0 flex-col gap-y-3">
-            <h2 class="text-xl font-bold">Skills</h2>
+        </Section>
+        <Section Title="Skills">
             <div class="flex flex-wrap gap-1">
                 {#each data.skills as skill}
                     <div
@@ -80,9 +76,8 @@
                     </div>
                 {/each}
             </div>
-        </section>
-        <section class="flex min-h-0 flex-col gap-y-3 print-force-new-page scroll-mb-16">
-            <h2 class="text-xl font-bold">Projects</h2>
+        </Section>
+        <Section Title="Projects">
             <div
                 class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
             >
@@ -90,9 +85,8 @@
                     <Project {...project} />
                 {/each}
             </div>
-        </section>
-        <section class="flex min-h-0 flex-col gap-y-3 print-force-new-page scroll-mb-16">
-            <h2 class="text-xl font-bold">Todo 📝</h2>
+        </Section>
+        <Section Title="Todo">
             <div
                 class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
             >
@@ -100,6 +94,6 @@
                     <Project {...task} />
                 {/each}
             </div>
-        </section>
+        </Section>
     </section>
 </main>
