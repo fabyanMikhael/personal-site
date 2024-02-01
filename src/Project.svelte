@@ -12,15 +12,17 @@
     <div class="flex flex-col space-y-1.5">
         <div class="space-y-1">
             <h3 class="font-semibold tracking-tight text-base">
-                {title}
                 {#if link}
                     <a
                         href={link}
                         target="_blank"
                         class="inline-flex items-center gap-1 hover:underline"
                     >
+                        {title}
                         <span class="size-1 rounded-full bg-green-500"></span>
                     </a>
+                {:else}
+                    {title}
                 {/if}
             </h3>
             <p class="text-muted-foreground font-mono text-xs">

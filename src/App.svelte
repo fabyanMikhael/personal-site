@@ -30,6 +30,7 @@
                 <div class="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
                     <a
                         href="mailto:{data.email}"
+                        aria-label="send an email to {data.email}"
                         class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground size-8"
                     >
                         <MailIcon class="size-4" />
@@ -37,6 +38,7 @@
 
                     <a
                         href={data.github.link}
+                        aria-label="visit {data.name}'s GitHub profile"
                         class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground size-8"
                     >
                         <Github class="size-4" />
@@ -44,6 +46,7 @@
 
                     <a
                         href={data.linkedIn.link}
+                        aria-label="visit {data.name}'s LinkedIn profile"
                         class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground size-8"
                     >
                         <Linkedin class="size-4" />
