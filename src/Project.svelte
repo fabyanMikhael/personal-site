@@ -11,7 +11,7 @@
 >
     <div class="flex flex-col space-y-1.5">
         <div class="space-y-1">
-            <h3 class="font-semibold tracking-tight text-base">
+            <h2 class="font-semibold tracking-tight text-base">
                 {#if link}
                     <a
                         href={link}
@@ -24,7 +24,7 @@
                 {:else}
                     {title}
                 {/if}
-            </h3>
+            </h2>
             <p class="text-muted-foreground font-mono text-xs">
                 {description}
             </p>

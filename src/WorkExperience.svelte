@@ -10,7 +10,7 @@
 <div class="rounded-lg bg-card text-card-foreground">
     <div class="flex flex-col space-y-1.5">
         <div class="flex items-center justify-between gap-x-2 text-base">
-            <h3 class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+            <h2 class="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
                 <span>{company}</span>
 
                 {#each tags as tag}
@@ -22,7 +22,7 @@
                         </div></span
                     >
                 {/each}
-            </h3>
+            </h2>
 
             <div class="text-sm tabular-nums text-gray-500">
                 {date}
