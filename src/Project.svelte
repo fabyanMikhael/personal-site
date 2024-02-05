@@ -25,9 +25,12 @@
                     {title}
                 {/if}
             </h2>
-            <p class="text-muted-foreground font-mono text-xs">
-                {description}
-            </p>
+
+            {#if description}
+                <p class="text-muted-foreground font-mono text-xs">
+                    {description}
+                </p>
+            {/if}
         </div>
     </div>
     <div class="text-pretty font-mono text-sm text-muted-foreground mt-auto flex">
