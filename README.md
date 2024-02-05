@@ -11,3 +11,8 @@ the project should automatically rebuild & deploy using the Dockerfile, and visi
 I recommend using `pnpm` instead though
 # Credits
 The the elements & styling have been mostly taken from the [minimalist cv page template](https://github.com/BartoszJarocki/cv) and refactored to work in Svelte. 
+
+<!-- Metadata -->
+<!-- Title: Portfolio Website -->
+<!-- Description: Personal website to showcase my work and experience -->
+<!-- Tags: Svelte, TailWindCSS, Typescript -->
