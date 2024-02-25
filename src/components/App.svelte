@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
     import { Github, GlobeIcon, Linkedin, MailIcon } from "lucide-svelte";
-    import data from "./data";
+    import data from "../data";
     import WorkExperience from "./WorkExperience.svelte";
     import Education from "./Education.svelte";
     import Project from "./Project.svelte";

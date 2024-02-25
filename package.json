@@ -1,28 +1,22 @@
 {
   "name": "personal-site",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
-  },
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^3.0.1",
-    "@tsconfig/svelte": "^5.0.2",
-    "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.33",
-    "svelte": "^4.2.8",
-    "svelte-check": "^3.6.2",
-    "tailwindcss": "^3.4.1",
-    "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "lucide-svelte": "^0.320.0",
-    "svelte-markdown": "^0.4.1"
+    "@astrojs/check": "^0.5.5",
+    "@astrojs/svelte": "^5.0.3",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.4.4",
+    "lucide-svelte": "^0.338.0",
+    "svelte": "^4.2.12",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
   }
 }
