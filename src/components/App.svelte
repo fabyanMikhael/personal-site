@@ -58,6 +58,11 @@
             <p class="text-pretty font-mono text-sm text-muted-foreground">
                 {data.about}
             </p>
+            {#if data.aboutAdditional}
+                <p class="text-pretty font-mono text-sm text-muted-foreground">
+                    {data.aboutAdditional}
+                </p>
+            {/if}
         </Section>
         <Section Title="Work Experience">
             {#each data.workExperience as role}
